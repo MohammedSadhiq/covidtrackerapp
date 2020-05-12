@@ -1,0 +1,39 @@
+<div class="text-white">
+<h4><strong>Emergency Contacts</strong></h4><br>
+
+<p>Contact number : <a>{{contactdata?.contacts?.primary?.number}}</a></p>
+<p>Contact number-toll free : <a>1075</a></p>
+<p>Contact number : <a href="{{contactdata?.contacts?.primary?.email}}">{{contactdata?.contacts?.primary?.email}}</a></p>
+<p>Contact number : <a href="{{contactdata?.contacts?.primary?.twitter}}">{{contactdata?.contacts?.primary?.twitter}}</a></p>
+<p>Contact number : <a href="{{contactdata?.contacts?.primary?.facebook}}">{{contactdata?.contacts?.primary?.facebook}}</a></p>
+<p>Contact number : <a href="{{contactdata?.contacts?.primary?.media}}">{{contactdata?.contacts?.primary?.media}}</a></p>
+
+</div>
+
+<div class="table-responsive-sm card " style="background-color: transparent !important; text-shadow: 0.1em 0.1em 0.15em #dc0073">
+  
+
+    <table class=" table table-striped text-white table-bordered">
+        <thead> 
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Region</th>
+            <th scope="col">Contact</th>
+           
+          </tr>
+        </thead>
+        <tbody style="text-shadow: 0.1em 0.1em 0.15em #00dcb1" >
+         
+            <tr *ngFor = "let x of contactdata?.contacts?.regional; index as i">
+             <!-- <td *ngFor = "let x of stat.data.regional">{{x.loc}}</td>-->
+             <td scope="row">{{i+1}}</td>
+             <td scope="row">{{x.loc}}</td>
+            <td scope="row">{{x.number}}</td>
+            
+          </tr>
+        
+         
+        </tbody>
+      </table>
+    
+</div>

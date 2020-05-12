@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/covidStatApp",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

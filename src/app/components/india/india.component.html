@@ -1,0 +1,74 @@
+<div class="row" style="background-color: transparent !important; text-shadow: 0.1em 0.1em 0.15em #dc0073">
+
+   
+
+<div class="col-md-6">
+
+<table class="table table-striped text-white hover table-bordered">
+    <thead >
+      <tr>
+        <th colspan="3">Summary</th>
+        
+      </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Total Cases</td>
+          <td>{{indlatest?.data?.summary?.total}}</td>
+        </tr>
+        <tr>
+            <th scope="row">1</th>
+            <td>Discharged</td>
+            <td>{{indlatest?.data?.summary?.discharged}}</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Deaths</td>
+            <td>{{indlatest?.data?.summary?.deaths}}</td>
+          </tr>
+    
+      </tbody>
+</table>
+</div>
+
+<div class="col-md-6" style="width:fit-content; height:fit-content;">
+
+  <canvas id="pieChart" style="width:fit-content; height:fit-content;"></canvas>
+  </div>
+
+</div>
+<br><br> 
+<div class="table-responsive-sm card " style="background-color: transparent !important; text-shadow: 0.1em 0.1em 0.15em #dc0073">
+  
+
+    <table class=" table table-striped text-white table-bordered">
+        <thead> 
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">states</th>
+            <th scope="col">Confirmed Cases</th>
+            <th scope="col">Discharged</th>
+            <th scope="col">Deaths</th>
+          </tr>
+        </thead>
+        <tbody style="text-shadow: 0.1em 0.1em 0.15em #00dcb1" >
+         
+            <tr *ngFor = "let x of indlatest?.data?.regional; index as i">
+             <!-- <td *ngFor = "let x of stat.data.regional">{{x.loc}}</td>-->
+             <td scope="row">{{i+1}}</td>
+             <td scope="row">{{x.loc}}</td>
+            <td scope="row">{{x.totalConfirmed}}</td>
+            <td scope="row">{{x.discharged}}</td>
+            <td scope="row">{{x.deaths}}</td>
+          </tr>
+        
+         
+        </tbody>
+      </table>
+    
+</div>
+
+
+<!---->

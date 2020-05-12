@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+    
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+/*
+    background-image: url('\assets\images\covid3.jpg'); background-attachment: fixed; background-position: center center; background-size: cover;
+
+*/
+background-color:#471628;
+}
+
+/*background: url(background-photo.jpg) center center cover no-repeat fixed;*/
+/*background: url(background-photo.jpg) center center cover no-repeat fixed;*/
+/* background-image: url('\assets\images\covid.jpg'); background-attachment: fixed; background-position: center center; background-size: cover;*/
+
+

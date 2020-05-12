@@ -1,0 +1,45 @@
+<div class="row" style="background-color: transparent !important; text-shadow: 0.1em 0.1em 0.15em #dc0073">
+
+   
+
+    <div class="col-md-6">
+    
+    <table class="table table-striped text-white hover table-bordered ">
+        <thead >
+          <tr>
+            <th colspan="3">Summary</th>
+            
+          </tr>
+        </thead>
+    
+        <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Total Cases</td>
+              <td>{{indlatest?.data?.regional[26].totalConfirmed}}</td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>Discharged</td>
+                <td>{{indlatest?.data?.regional[26].discharged}}</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Deaths</td>
+                <td>{{indlatest?.data?.regional[26].deaths}}</td>
+              </tr>
+        
+          </tbody>
+    </table>
+    </div>
+    
+    <div class="col-md-6" style="width:fit-content; height:fit-content;">
+    
+      <canvas id="pieChart" style="width:fit-content; height:fit-content;"></canvas>
+      </div>
+    
+    </div>
+    
+    
+    
+    <!---->

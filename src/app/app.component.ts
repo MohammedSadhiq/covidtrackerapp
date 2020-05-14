@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'covidStatApp';
+
+  isToggled: boolean = false;
+
+  toggle(){
+    this.isToggled = !this.isToggled;
+  }
+
 }

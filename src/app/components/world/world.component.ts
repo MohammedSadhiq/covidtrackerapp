@@ -41,13 +41,16 @@ testDates =[];
        label: 'Number of Confirmed Cases ',
        //data: [9,7 , 3, 5, 2, 10,15,16,19,3,1,9],
        data:this.TotalonDay,
-       fill:false,
+       fill:true,
        lineTension:0.2,
-       borderColor:"white",
-       borderWidth: 1
+       borderColor:"yellow",
+       pointBackgroundColor:"orange",
+       borderWidth: 0.1
    }]
   }, 
   options: {
+    responsive : true,
+          maintainAspectRatio : false,
    title:{
        text:"Line Chart",
        display:true
@@ -86,13 +89,17 @@ testDates =[];
              label: 'Number of Tests performed ',
              //data: [9,7 , 3, 5, 2, 10,15,16,19,3,1,9],
              data:this.TotalTests,
-             fill:false,
-             lineTension:0.2,
-             borderColor:"white",
-             borderWidth: 1
+             fill:true,
+             lineTension:0.8,
+             pointBackgroundColor:"orange",
+             borderColor:"yellow",
+             borderWidth: 0.2
          }]
         }, 
         options: {
+          responsive : true,
+          maintainAspectRatio : false,
+         
          title:{
              text:"Line Chart",
              display:true

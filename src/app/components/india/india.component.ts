@@ -65,6 +65,8 @@ export class IndiaComponent implements OnInit {
    }]
   }, 
   options: {
+    responsive : true,
+          maintainAspectRatio : false,
    title:{
        text:"Bar Chart",
        display:false
